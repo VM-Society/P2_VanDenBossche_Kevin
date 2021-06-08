@@ -14,10 +14,7 @@ ul {
 	justify-items: center;
     align-items: center;
 }
-.liste-nav a {
-    text-decoration: none;
-    color: black;
-}
+
 .liste-nav li:nth-child(4) a {
     color: var(--main-bg-blue); 
 }
@@ -155,7 +152,6 @@ form button span {
     padding: 20px;
 	font-size: medium;
 	align-items: center;
-    text-decoration: none;
 
     display: flex;
 }
