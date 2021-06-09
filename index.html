@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- encodage des caractère et vitesse des navigateurs -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- pour la compatibilité des navigateur -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive -->
     <meta name="description" content="Reservation de voyage en ligne">
     <meta name="author" content="van Den Bossche Kevin">
     <title>Reservia</title>
@@ -19,19 +19,19 @@
 <body>
     
     <div class="container">
-        <header>
+        <header> <!-- en tête -->
             <nav>
                 <ul class="liste-nav">
                     <li><a href="#" class="item-nav logo-menu"><img src="images/logo/Reservia.svg" alt="logo menu"></a></li>
-                    <li><a class="item-nav" href="#hebergement">Hébergements</a></li>
-                    <li><a class="item-nav" href="#activite">Activités</a></li>
-                    <li><a class="item-nav" href="#">S'inscrire</a></li>
+                    <li><a class="item-nav" href="#hebergement">Hébergements</a></li><!-- ancre hebergements -->
+                    <li><a class="item-nav" href="#activite">Activités</a></li> <!-- ancre activités -->
+                    <li><a class="item-nav" href="#">S'inscrire</a></li> 
                 </ul>
             </nav>
             <h1><strong>Trouver votre Hébergements pour des vacances de rêve</strong></h1>
             <p>En plein centre ville ou en pleine nature</p>
             
-            <form>
+            <form> <!-- formulaire -->
                 <label for="search">
                     <img src="images/logo/search.svg" alt="icone de recherche">
                 </label>
@@ -42,7 +42,7 @@
                     <span>Rechercher</span> 
                     <i class="fas fa-search"></i>
                 </button>
-            </form>
+            </form> <!-- fin  -->
 
             <div class="filtre">
                 <h2>Filtres</h2>
@@ -87,10 +87,10 @@
 
         </header>
 
-        <!-- () -->
-        <main>
+        <!-- début du main -->
+        <main><!-- élément principal de la page -->
             <!-- id hebergement sert de lien d'ancrage -->
-            <section id="hebergement">
+            <section id="hebergement"> 
                 <h2>Hébergements à Marseille</h2>
                 
                 <!-- Carte -->
@@ -181,7 +181,7 @@
             </section>
 
             <!-- aside les plus populaires -->
-            <aside id="populaire">
+            <aside id="populaire"> <!-- aside= contenu mis a part du contenu principal -->
                 <div class="title">
                     <h2>Les plus populaires</h2>
                     <i class="fas fa-chart-line"></i>
@@ -232,8 +232,8 @@
             
         </main><!-- Fin -->
 
-        <!-- () -->
-        <aside id="activite">
+        <!-- id activité sert de lien d'ancrage -->
+        <aside id="activite"> 
             <h2>Activités à Marseille</h2>
             
             <!-- Carte -->
@@ -276,7 +276,7 @@
         
     </div>
 
-    <footer>
+    <footer> <!-- pied de la page -->
         <div class="propos">
             <h2><strong>A propos</strong></h2>
             <a href="#">Fonctionnement du site</a>
@@ -295,6 +295,6 @@
             <a href="#">Centre d'aide</a>
             <a href="#">Nous contacter</a>
         </div>
-    </footer>
+    </footer> <!-- fin -->
 </body>
 </html>
