@@ -1,14 +1,14 @@
-:root {
+:root {    /* couleur prédefini */
     --main-bg-gray: #f2f2f2;
     --main-bg-blue: #0065FC;
 }
 
-*, ::before, ::after {
+*, ::before, ::after {  /* sert a insérés du contenu avant après */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body {
+body {   
     width: 100%;
     font-family: 'Raleway', sans-serif;
     background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
