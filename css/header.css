@@ -3,7 +3,6 @@
     --main-bg-blue: #0065FC;
     --main-bg-blue-light: #DEEBFF;
 }
-/*  */
 ul {
     margin-bottom: 30px;
     list-style-type: none;
@@ -36,7 +35,36 @@ ul {
     grid-row: 1/2;
 }
 
-/*  */
+.liste-nav li:nth-child(2),
+.liste-nav li:nth-child(3){
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 3px #f2f2f2;
+
+    display: grid;
+    justify-content: center;
+}
+
+
+
+.liste-nav li:nth-child(2),:hover
+.liste-nav li:nth-child(3):hover {
+
+    border-bottom: solid 3px #0065FC;
+        
+        
+}
+
+    
+
+
+
+
+    
+
+
+    
+
 h1 {
 	font-size: larger;
 	padding: 0 20px 15px;
@@ -46,7 +74,7 @@ h1 + p {
 	padding: 0 20px;
 }
 
-/*  */
+
 form > * {
     outline: 0;
     cursor: pointer;
@@ -182,7 +210,7 @@ form button span {
     color: #333;
 }
 
-/*  */
+
 main {
 	display: flex;
 	flex-direction: column-reverse;
