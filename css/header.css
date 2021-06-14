@@ -47,23 +47,13 @@ ul {
 
 
 
-.liste-nav li:nth-child(2),:hover
+.liste-nav li:nth-child(2):hover,
 .liste-nav li:nth-child(3):hover {
 
     border-bottom: solid 3px #0065FC;
         
         
 }
-
-    
-
-
-
-
-    
-
-
-    
 
 h1 {
 	font-size: larger;
@@ -152,6 +142,7 @@ form button span {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
 }
 .filtre button .img {
     height: 100%;

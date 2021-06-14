@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8"> <!-- encodage des caractère et vitesse des navigateurs -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- pour la compatibilité des navigateur -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive -->
+<head> <!-- Tête de la page -->
+    <meta charset="UTF-8"> <!-- Encodage des caractère et vitesse des navigateurs -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Pour la compatibilité des navigateur internet  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pour le responsive  -->
     <meta name="description" content="Reservation de voyage en ligne">
-    <meta name="author" content="van Den Bossche Kevin">
+    <meta name="author" content="VanDenBossche Kevin">
     <title>Reservia</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
@@ -15,34 +15,34 @@
     <script src="https://kit.fontawesome.com/e04d862c82.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;600&display=swap" rel="stylesheet">
-</head>
-<body>
+</head> <!-- Fin du head -->
+<body> <!-- Corp de la page -->
     
     <div class="container">
-        <header> <!-- en tête -->
-            <nav>
+        <header> <!-- l'en tête du site  -->
+            <nav> <!-- Lien de avigation sur la même page ou sur une page différente  -->
                 <ul class="liste-nav">
                     <li><a href="#" class="item-nav logo-menu"><img src="images/logo/Reservia.svg" alt="logo menu"></a></li>
-                    <li><a class="item-nav" href="#hebergement">Hébergements</a></li><!-- ancre hebergements -->
-                    <li><a class="item-nav" href="#activite">Activités</a></li><!-- ancre activités -->
+                    <li><a class="item-nav" href="#hebergement">Hébergements</a></li> <!-- Ancre hébergement  -->
+                    <li><a class="item-nav" href="#activite">Activités</a></li> <!-- Ancre activité  -->
                     <li><a class="item-nav" href="#">S'inscrire</a></li>
                 </ul> <!-- Liste a puces ( desordonnée ) -->
             </nav>
-            <h1><strong>Trouver votre Hébergements pour des vacances de rêve</strong></h1>
+            <h1><strong>Trouver votre Hébergements pour des vacances de rêve</strong></h1> <!-- Strong= elément important et mis en gras -->
             <p>En plein centre ville ou en pleine nature</p>
             
-            <form> <!-- formulaire -->
+            <form> <!-- Formulaire -->
                 <label for="search"> <!-- représente une légende pour un objet d'une interface utilisateur -->
                     <img src="images/logo/search.svg" alt="icone de recherche">
                 </label>
 
                 <input type="search" name="recherche" id="search" placeholder="Marseille,France">
-
+                <!-- (Imput) Entrée de données dans un système informatique -->
                 <button> 
                     <span>Rechercher</span> 
                     <i class="fas fa-search"></i>
                 </button>
-            </form> <!-- fin  -->
+            </form>
 
             <div class="filtre">
                 <h2>Filtres</h2>
@@ -87,10 +87,10 @@
 
         </header>
 
-        <!-- début du main -->
-        <main><!-- élément principal de la page -->
+        <!-- Début du main -->
+        <main> <!-- Elément pricipal de la page -->
             <!-- id hebergement sert de lien d'ancrage -->
-            <section id="hebergement"> 
+            <section id="hebergement">
                 <h2>Hébergements à Marseille</h2>
                 
                 <!-- Carte -->
@@ -176,12 +176,12 @@
                     </div>
                 </article><!--fin Carte -->
 
-                <a href="#">Afficher plus</a>
+                <a href="#"><b>Afficher plus</b></a>
 
             </section>
 
-            <!-- aside les plus populaires -->
-            <aside id="populaire"> <!-- aside= contenu mis a part du contenu principal -->
+            <!-- aside les plus populaires --> <!-- Aside= définit un contenu mis à part du contenu principal -->
+            <aside id="populaire">
                 <div class="title">
                     <h2>Les plus populaires</h2>
                     <i class="fas fa-chart-line"></i>
@@ -230,10 +230,10 @@
                 </article><!--fin Carte -->
             </aside>
             
-        </main><!-- Fin -->
+        </main><!-- Fin du main -->
 
-        <!-- id activité sert de lien d'ancrage -->
-        <aside id="activite"> 
+        <!-- Début du aside -->
+        <aside id="activite">
             <h2>Activités à Marseille</h2>
             
             <!-- Carte -->
@@ -273,10 +273,10 @@
             </article><!--fin Carte -->
 
         </aside>
-        
+        <!-- Fin du aside -->
     </div>
-
-    <footer> <!-- pied de la page -->
+    <!-- Début du footer -->
+    <footer> <!-- Pied de la page -->
         <div class="propos">
             <h2><strong>A propos</strong></h2>
             <a href="#">Fonctionnement du site</a>
@@ -295,6 +295,7 @@
             <a href="#">Centre d'aide</a>
             <a href="#">Nous contacter</a>
         </div>
-    </footer> <!-- fin -->
+    </footer>
+    <!-- Fin du footer -->
 </body>
 </html>
