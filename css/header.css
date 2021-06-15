@@ -144,6 +144,8 @@ form button span {
     justify-content: space-around;
     cursor: pointer;
 }
+.filtre button:hover{background: var(--main-bg-blue-light);}
+
 .filtre button .img {
     height: 100%;
     width: 50px;
