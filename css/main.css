@@ -46,7 +46,6 @@
     height: 135px;
     border-radius: 15px 15px 0 0;
 }
-
 #hebergement .card:nth-child(2) .img {
     background-color: #333;
     background: url('../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
@@ -90,8 +89,6 @@
     background-position: center;
 }
 
-
-
 #populaire {
     width: 100%;
 	height: auto;
@@ -124,13 +121,11 @@
 	justify-content: space-between;
     align-items: center;
 }
-
 #populaire .img {
 	width: 95%;
 	height: 170px;
 	border-radius: 25px 0 0 25px;
 }
-
 #populaire .card:nth-child(2) .img {
     background-color: #333;
     background: url('../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
@@ -158,7 +153,6 @@
     grid-column: 2/3;
     grid-row: 1/2;
 }
-
 #populaire p {
     font-size: smaller;
     grid-column: 2/3;

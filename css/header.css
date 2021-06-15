@@ -34,7 +34,6 @@ ul {
     grid-column: 2/3;
     grid-row: 1/2;
 }
-
 .liste-nav li:nth-child(2),
 .liste-nav li:nth-child(3){
     width: 100%;
@@ -45,14 +44,10 @@ ul {
     justify-content: center;
 }
 
-
-
 .liste-nav li:nth-child(2):hover,
 .liste-nav li:nth-child(3):hover {
 
-    border-bottom: solid 3px #0065FC;
-        
-        
+    border-bottom: solid 3px #0065FC;       
 }
 
 h1 {
@@ -63,7 +58,6 @@ h1 + p {
 	font-size: large;
 	padding: 0 20px;
 }
-
 
 form > * {
     outline: 0;
@@ -79,6 +73,7 @@ form {
 	display: flex;
 	position: relative;
 }
+
 label {
     width: 50px;
     padding: 11px;
@@ -89,6 +84,7 @@ label {
 label img {
 	margin: auto;
 }
+
 input {
     width: 80%;
     font-weight: bold;
@@ -102,6 +98,7 @@ input::placeholder{
     color: black;
     font-size: large;
 }
+
 form button {
     width: 45px;
     background-color: var(--main-bg-blue); 
@@ -167,7 +164,6 @@ form button span {
     margin: auto;
     margin-left: -5px;
 }
-
 .filtre button:nth-child(2){
     grid-column: 1/2;
     grid-row: 2/3;
@@ -187,7 +183,6 @@ form button span {
     grid-column: 1/2;
     grid-row: 4/5;
 }
-
 .filtre + a {
     padding: 20px;
 	font-size: medium;
@@ -202,7 +197,6 @@ form button span {
 .filtre + a p {
     color: #333;
 }
-
 
 main {
 	display: flex;
