@@ -51,8 +51,7 @@ ul {
 }
 .liste-nav li:nth-child(2) a:hover,
 .liste-nav li:nth-child(3) a:hover{
-    color:var(--main-bg-blue);
-    
+    color: var(--main-bg-blue);
     border-bottom: solid 3px var(--main-bg-blue);  
 }
 
@@ -209,9 +208,15 @@ main {
 	margin-bottom: 40px;
 }
 
-@media (min-width: 768px) {
-
-/*  */
+@media (min-width: 768px) { /* Version tablette */
+    header {
+        height: 510px;
+    }
+    .filtre {
+        height: 194px;
+        grid-template-columns: 29% 29%;
+        grid-template-rows: 40px 55px 55px;
+    }
 ul {
     height: 70px;
     width: 100%; 
@@ -244,15 +249,6 @@ ul {
     border-top: solid 3px var(--main-bg-blue);
 }
 
-h1 {
-    display: flex;
-    justify-content: center;
-}
-p {
-    display: flex;
-    justify-content: center;
-}    
-
 form > * {
     height: 44px;
 }
@@ -270,32 +266,77 @@ form button span {
     font-size: medium;
 }
 form button:hover {
-    background: #8a63dd;
+    background: blue;
     box-shadow: 0 0 12px var(--main-bg-blue);
 }
 
-.filtre button {max-width: 60%;}
+.filtre button {max-width: 185px;}
 .filtre button:nth-child(5) {
-    max-width: 65%;
+    max-width: 228px;
     grid-column: 2/3;
     grid-row: 3/4;
 }
 }
 
 @media (min-width: 1025px) {
+    header {
+        height: 420px;
+    }
+    ul {
+        margin-bottom: 50px;
+    }
+    ul .item-nav {
+        height: 30px;
+        margin-top: 42px;
+    }
+    .liste-nav li:nth-child(1) .item-nav {
+        height: 60px;
+        margin-top: 50px;
+    }
 
-ul {
-    display: flex;
-    align-items: flex-start;
-    margin: 40px 0;
-}
+    h1 {
+        font-size: larger;
+        padding: 20px 20px 0 15px;   
+    }
 
-.liste-nav li:nth-child(2), 
-.liste-nav li:nth-child(3), 
-.liste-nav li:nth-child(4) {
+    .filtre {
+        height: 80px;
+        width: 100%;
+        padding: 15px 20px;
+        display: grid;
+        grid-template-columns: 60px 186px 186px 186px 229px;
+        grid-template-rows: 50px;
+        grid-column-gap: 18px;
+    }
 
-    display: flex;
-    justify-content: flex-end;
-    border-bottom: none;
-} 
+    .filtre .img + span {
+        font-size: large;
+        margin: auto;
+        margin-left: -10px;
+    }
+
+    .filtre button:nth-child(2){
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .filtre button:nth-child(3){
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .filtre button:nth-child(4){
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    .filtre button:nth-child(5){
+        grid-column: 5/6;
+        grid-row: 1/2;
+    }
+
+    .filtre + a {
+        padding: 0 0 0 20px;
+        margin-top: 22px;
+    }
+    .filtre + a p {
+        color: #333; 
+    }
 }

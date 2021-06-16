@@ -5,7 +5,7 @@
 	display: flex;
 	flex-direction: column;
 }
-h3 {
+#activite h3 {
     margin-bottom: 13px;
 }
 #activite .card {
@@ -22,54 +22,14 @@ h3 {
 	font-size: medium;
 	margin: 14px 0 0 25px;
 }
-#activite .card .img {
+#activite .card  .img {
 	width: 100%;
 	height: 75%;
+}
+#activite .card  .img img {
 	border-radius: 20px 20px 0 0;
 }
 
-#activite .card:nth-child(2) .img {
-    background-color: #333;
-    background-image: url('../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    /* background: no-repeat center / cover url('../images/activites/4_small/.jpg'); */
-}
-#activite .card:nth-child(3) .img {
-    background-color: #333;
-    background-image: url('../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    /* background: no-repeat center / cover url('../images/activites/4_small/.jpg'); */
-}
-#activite .card:nth-child(4) .img {
-    background-color: #333;
-    background-image: url('../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    /* background: no-repeat center / cover url('../images/activites/4_small/.jpg'); */
-}
-#activite .card:nth-child(5) .img {
-    background-color: #333;
-    background-image: url('../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    /* background: no-repeat center / cover url('../images/activites/4_small/.jpg'); */
-}
-#activite .card:nth-child(6) .img {
-    background-color: #333;
-    background-image: url('../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    /* background: no-repeat center / cover url('../images/activites/4_small/.jpg'); */
-}
-#activite .card:nth-child(7) .img {
-    background-color: #333;
-    background-image: url('../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    /* background: no-repeat center / cover url('../images/activites/4_small/.jpg'); */
-}
 
 footer {
 	width: 100%;
@@ -82,7 +42,6 @@ footer {
 	flex-direction: column;
 	gap: 40px;
 }
-
 footer div {
 	display: flex;
 	flex-direction: column;
@@ -94,62 +53,131 @@ footer h2 {
 
 @media (min-width: 768px) {
 
-#activite .card { cursor: pointer;}
+    #activite {
+        height: 650px;
+        padding: 0px 10px;
+        margin: -10px 0px;
+        display: grid;
+        grid-template-columns: 31.5% 31.5% 31.5%;
+        grid-template-rows: 28px 250px 250px;
+        column-gap: 20px;
+        row-gap: 25px;
+    }
+    #activite h2 {
+        display: grid;
+        grid-column: 1/4;
+        grid-row: 1/2;
+        align-self: end;
+        font-size: x-large;
+    }      
+    #activite .card {
+        height: 250px;
+        margin: 1px auto;
+        padding: 5px;
+        border-radius: 20px;
+            
+        gap: 0px;
+        flex-direction: column;
+    }
+    #activite  .img {
+        height: 135px;
+    }
+    #activite .img img {
+        border-radius: 15px 15px 0 0;
+    }
+    #activite .card:nth-child(2) {
+        grid-column: 1/2;
+        grid-row: 2/3;      
+    }
+    #activite .card:nth-child(3) {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #activite .card:nth-child(4) {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    #activite .card:nth-child(5) {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #activite .card:nth-child(6) {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #activite .card:nth-child(6) {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
 
-#activite {
-    padding: 0px 10px;
-    margin: -10px 0px;
-    display: grid;
-    grid-template-columns: 31.5% 31.5% 31.5%;
-    grid-template-rows: 0px 250px 250px 63px;
-    column-gap: 20px;
-    row-gap: 25px;
-}
-#activite h2 {
-    display: grid;
-    grid-column: 1/4;
-    align-self: end;
-    font-size: x-large;
-}      
-#activite .card {
-    height: 250px;
-    margin: 1px auto;
-    padding: 5px;
-    border-radius: 20px;
-        
-    gap: 0px;
-    flex-direction: column;
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 220px;
     }
-#activite .img {
-    width: 100%;
-    height: 135px;
-    border-radius: 15px 15px 0 0;
+}
+
+@media (min-width: 1025px) {
+    #activite {
+        height: 555px;
+        padding: 0 20px;
+
+        grid-template-columns: 22% 22% 22% 22%;
+        grid-template-rows: 40px 200px 200px;
+        gap: 4%;
     }
-#activite .card:nth-child(2) {
-    grid-column: 1/2;
-    grid-row: 2/3;      
-}
-#activite .card:nth-child(3) {
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-#activite .card:nth-child(4) {
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-#activite .card:nth-child(5) {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-#activite .card:nth-child(6) {
-    grid-column: 3/4;
-    grid-row: 3/4;
-}
-footer {
-    flex-direction: row;
-    justify-content: space-around;
-    height: 220px;
-}
-}
-    
+    #activite .card {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    #activite .card:nth-child(2) {
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+    #activite .card:nth-child(3) {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #activite .card:nth-child(4) {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        height: 85%;
+        align-self: flex-end;
+    }
+    #activite .card:nth-child(5) {
+        grid-column: 3/4;
+        grid-row: 2/4;
+    }
+    #activite .card:nth-child(6) {
+        grid-column: 4/5;
+        grid-row: 2/3;
+        height: 85%;
+        align-self: flex-start;
+    }
+    #activite .card:nth-child(7) {
+        grid-column: 4/5;
+        grid-row: 3/4;
+    }
+    #activite .card  .img {
+        width: 100%;
+        height: 80%;
+    }
+    #activite .card-100  .img {
+        width: 100%;
+        height: 90%;
+    }
+    #activite .card h3 {
+        font-size: medium;
+        margin: auto 0;
+        margin-left: 20px;
+    }
+
+    footer {
+        padding: 36px 40px;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 28% 28% 28% auto;
+    }
+}   
     
