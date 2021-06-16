@@ -88,7 +88,6 @@
     background-size: cover;
     background-position: center;
 }
-
 #populaire {
     width: 100%;
 	height: auto;
@@ -164,30 +163,8 @@
 }
 
 /* résponsive */
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
-h1 {
-    display: flex;
-    justify-content: center;
-}
-p {
-    display: flex;
-    justify-content: center;
-}    
-form {width: 65%;}
-            
-input {padding: 21px 95px;}
-            
-form button {
-    position: relative;
-    right: 25px;
-}
-.filtre button:nth-child(2) {width: 100%;}
-            
-.filtre button:nth-child(4) {width: 100%;}
-      
-.filtre button:nth-child(5) {width: 100%;}
-            
 #populaire {
     padding: 30px 10px;
     display: grid;
@@ -197,14 +174,14 @@ form button {
     background: white;
 }
 #populaire h3{margin: 0 10px;}
-    
+
 #populaire p {
     margin: auto 10px;
     display: flex;
     justify-content: flex-start;
 }
 #populaire .etoile {margin: auto 10px;}
-    
+
 #populaire .title {
     grid-column: 1/4;
     grid-row: 1/2;
@@ -258,13 +235,13 @@ form button {
     margin-top: -5px;
 }
 #hebergement .etoile {margin: auto 10px;}
-       
+   
 #hebergement .card {
     height: 250px;
     margin: 1px auto;
     padding: 5px;
     border-radius: 20px;
-            
+        
     gap: 0px;
     flex-direction: column;
 }
@@ -296,24 +273,30 @@ form button {
 a {
     display: grid;
     grid-column: 1/2; 
-    
+
     display: flex;
     align-self: flex-start;
 }
 }
 
+@media (min-width: 1025px) {
         
-       
-    
-       
-       
-        
-       
-    
-        
-
-        
-    
-
-
-
+main {
+    padding: 0 20px;
+    flex-direction: row;
+    column-gap: 30px;
+}
+#hebergement {
+    width: 71%;
+    background: var(--main-bg-gray);
+}
+#populaire {
+    background: var(--main-bg-gray);
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+}
+#populaire .card {
+    width: 90%;
+}
+}
