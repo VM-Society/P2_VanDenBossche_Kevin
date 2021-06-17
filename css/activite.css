@@ -51,7 +51,7 @@ footer h2 {
 	font-size: larger;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) { /* version tablette */
 
     #activite {
         height: 650px;
@@ -117,7 +117,7 @@ footer h2 {
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1025px) { /* version desktop */
     #activite {
         height: 555px;
         padding: 0 20px;
