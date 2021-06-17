@@ -172,7 +172,6 @@ form button span {
     grid-row: 2/3;
 }
 .filtre button:nth-child(3){
-    width: 90%;
     grid-column: 2/3;
     grid-row: 2/3;
 }

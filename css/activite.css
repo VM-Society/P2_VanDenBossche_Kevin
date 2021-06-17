@@ -5,8 +5,9 @@
 	display: flex;
 	flex-direction: column;
 }
-#activite h3 {
+#activite figcaption {
     margin-bottom: 13px;
+    font-weight: bold;
 }
 #activite .card {
 	height: 215px;
@@ -18,7 +19,7 @@
 	display: flex;
 	flex-direction: column;
 }
-#activite h3 {
+#activite figcaption {
 	font-size: medium;
 	margin: 14px 0 0 25px;
 }
@@ -167,7 +168,7 @@ footer h2 {
         width: 100%;
         height: 90%;
     }
-    #activite .card h3 {
+    #activite .card figcaption {
         font-size: medium;
         margin: auto 0;
         margin-left: 20px;
