@@ -200,13 +200,14 @@ form button span {
     color: #333;
 }
 
+
 main {
 	display: flex;
 	flex-direction: column-reverse;
 	margin-bottom: 40px;
 }
 
-@media (min-width: 768px) { /* Version tablette */
+@media (min-width: 768px) { /* Media queries: Version tablette */
     header {
         height: 510px;
     }
@@ -276,7 +277,7 @@ main {
     }
 }
 
-@media (min-width: 1025px) { /* version desktop */
+@media (min-width: 1025px) { /* Media queries: Version Desktop */
     header {
         height: 420px;
     }
@@ -338,3 +339,16 @@ main {
         color: #333; 
     }
 }
+
+@media (max-width: 340px) {
+    .filtre .img + span {
+        font-size: small;
+    }
+}
+
+@media (min-width: 1500px) {
+    .container, footer {
+    max-width: 1500px;
+}
+}
+
